@@ -1,0 +1,35 @@
+{
+  "name": "rollup-plugin-alias-less",
+  "version": "0.1.0",
+  "description": "Webpack style Less aliases in Rollup",
+  "main": "dist/rollup-plugin-alias-less.cjs.js",
+  "module": "dist/rollup-plugin-alias-less.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdovais/rollup-plugin-alias-less.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohdovais/rollup-plugin-alias-lesss/issues"
+  },
+  "homepage": "https://github.com/mohdovais/rollup-plugin-alias-less#readme",
+  "keywords": [
+    "rollup-plugin"
+  ],
+  "author": "Mohd Ovais",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^3.10.3",
+    "rollup": "^1.20.2",
+    "rollup-plugin-postcss": "^2.0.3"
+  },
+  "peerDependencies": {
+    "rollup": "1.x"
+  },
+  "files": [
+    "dist"
+  ]
+}
