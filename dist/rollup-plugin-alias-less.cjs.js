@@ -1,9 +1,10 @@
 'use strict';
 
-var rollupPluginutils = require('rollup-pluginutils');
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-const fs = require("fs");
-const path = require("path");
+var rollupPluginutils = require('rollup-pluginutils');
+var fs = _interopDefault(require('fs'));
+var path = _interopDefault(require('path'));
 
 const node_modules_path = module.paths.find(module_path => {
   return fs.existsSync(module_path);

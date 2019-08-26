@@ -1,6 +1,6 @@
 import { createFilter } from "rollup-pluginutils";
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 const node_modules_path = module.paths.find(module_path => {
   return fs.existsSync(module_path);

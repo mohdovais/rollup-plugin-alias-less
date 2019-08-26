@@ -4,6 +4,7 @@
   "description": "Webpack style Less aliases in Rollup",
   "main": "dist/rollup-plugin-alias-less.cjs.js",
   "module": "dist/rollup-plugin-alias-less.esm.js",
+  "jsnext:main": "dist/rollup-plugin-alias-less.esm.js",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +23,7 @@
   "author": "Mohd Ovais",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^6.2.2",
     "less": "^3.10.3",
     "rollup": "^1.20.2",
     "rollup-plugin-postcss": "^2.0.3"

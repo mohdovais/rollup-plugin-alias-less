@@ -1,6 +1,7 @@
+const path = require("path");
 const { rollup } = require("rollup");
 const postcss = require("rollup-plugin-postcss");
-const aliasLess = require("./src");
+const aliasLess = require(".");
 
 rollup({
   input: "sample/main.js",
@@ -12,17 +13,13 @@ rollup({
     }),
     postcss()
   ]
-}).then(
-  build => {
-    const bundle = build.generate({
-      type: "esm"
-    });
-
-    console.log(bundle);
-  },
-  error => {
-    console.log("========== ERROR ==========");
-    console.log(error);
-    console.log("===========================");
-  }
-);
+})
+  .then(build =>
+    build.generate({
+      format: "esm"
+    })
+  )
+  .then(bundle => {
+    const { code } = bundle.output[0];
+    console.log(code);
+  });
